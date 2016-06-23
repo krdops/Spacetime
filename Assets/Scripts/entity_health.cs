@@ -151,20 +151,28 @@ public class entity_health : MonoBehaviour {
     // =======================================================================================================
     public void setMaximumHealth(float newMaxHealth)
     {
-        // CASE 1: New maximum health is lower than current health. (lower the current health).
-        if (newMaxHealth < getCurrentHealth())
+        // 1. Is the new maximum health greater than the death threshold? (proceed, otherwise log error to console)
+        if (newMaxHealth >= getDeathThreshold())
         {
-            // 1a. Lower the current health to new max value.
-            setCurrentHealth(newMaxHealth);
-            // 1b. Set the max health.
-            maximumHP = newMaxHealth;
-        }
-        // CASE 2: New maximum health is lower than death threshold. (do not adjust, log error).
-        if (newMaxHealth < getDeathThreshold())
 
-        // CASE 3: 
+            // 2. Is the new maximum health lower than the current health?
+            if (newMaxHealth < getCurrentHealth())
+            {
+                // 2a. Lower the current health to the new max value.
+                setCurrentHealth(newMaxHealth);
+            }
+
+            // 3. Set the new maximum health.
+            maximumHP = newMaxHealth;
+
+        }
+        else
+        {
+            // Print an error to the unity console. Do not perform any other action, especially change the maximum health.
+            errorLogHandler("New maximum health is below death threshold! Aborting change.", gameObject.transform.name, this.GetType().FullName, 1);
+        }
     }
-    
+
     #endregion
 
     #region MISC_FUNCTIONS
@@ -216,17 +224,17 @@ public class entity_health : MonoBehaviour {
 
     // DESC: damage ==========================================================================================
     // Name  : damage
-    // Params: float dmgAmt - must be negative, amount intended to take from current health.
+    // Params: float dmgAmt - must be positive, amount intended to take from current health.
     // Descr : Provided "dmgAmt" is negative, applies "damage" amount to current health through subtraction.
     // =======================================================================================================
     public void damage(float dmgAmt)
     {
-        // 1. The damage amount is negative, so apply it to current health.
-        if (dmgAmt < 0)
+        // 1. The damage amount is positive, so apply it to current health.
+        if (dmgAmt >= 0)
             setCurrentHealth(getCurrentHealth() - dmgAmt);
-        // 2. The damage amount is positive. Print error to unity debug log. Do nothing.
+        // 2. The damage amount is negative. Print error to unity debug log. Do nothing.
         else
-            errorLogHandler("Damage must be a negative value!", this.GetType().FullName, gameObject.transform.name, 2);
+            errorLogHandler("Damage must be a positive value!", this.GetType().FullName, gameObject.transform.name, 2);
     }
 
     // DESC: heal ============================================================================================
