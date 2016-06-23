@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 2ae72a7dcf8a0e7428d049d671f9a6d9
+timeCreated: 1466126707
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Arm Controll.L
+    100002: Arm Controll.L_end
+    100004: Arm Controll.R
+    100006: Arm Controll.R_end
+    100008: Armature.001
+    100010: Bone
+    100012: Bone.004
+    100014: Bone.004_end
+    100016: Bone.008
+    100018: Bone.008_end
+    100020: Bone.009
+    100022: Bone.009_end
+    100024: Bone.010
+    100026: Bone.010_end
+    100028: Bone.012
+    100030: Bone.012_end
+    100032: Bone.013
+    100034: Bone.013_end
+    100036: Cube.001
+    100038: Cube.002
+    100040: Foot.L
+    100042: Foot.L_end
+    100044: Foot.R
+    100046: Foot.R_end
+    100048: IK Arm.L
+    100050: IK Arm.L_end
+    100052: IK Arm.R
+    100054: IK Arm.R_end
+    100056: IK Leg.L
+    100058: IK Leg.L_end
+    100060: IK Leg.R
+    100062: IK Leg.R_end
+    100064: IK.L
+    100066: IK.L_end
+    100068: IK.R
+    100070: IK.R_end
+    100072: Leg Controll.L
+    100074: Leg Controll.R
+    100076: Lower Arm.L
+    100078: Lower Arm.R
+    100080: Lower Leg.L
+    100082: Lower Leg.L_end
+    100084: Lower Leg.R
+    100086: Lower Leg.R_end
+    100088: Mater Bone
+    100090: //RootNode
+    100092: Upper Arm.L
+    100094: Upper Arm.R
+    100096: Upper Leg.L
+    100098: Upper Leg.R
+    400000: Arm Controll.L
+    400002: Arm Controll.L_end
+    400004: Arm Controll.R
+    400006: Arm Controll.R_end
+    400008: Armature.001
+    400010: Bone
+    400012: Bone.004
+    400014: Bone.004_end
+    400016: Bone.008
+    400018: Bone.008_end
+    400020: Bone.009
+    400022: Bone.009_end
+    400024: Bone.010
+    400026: Bone.010_end
+    400028: Bone.012
+    400030: Bone.012_end
+    400032: Bone.013
+    400034: Bone.013_end
+    400036: Cube.001
+    400038: Cube.002
+    400040: Foot.L
+    400042: Foot.L_end
+    400044: Foot.R
+    400046: Foot.R_end
+    400048: IK Arm.L
+    400050: IK Arm.L_end
+    400052: IK Arm.R
+    400054: IK Arm.R_end
+    400056: IK Leg.L
+    400058: IK Leg.L_end
+    400060: IK Leg.R
+    400062: IK Leg.R_end
+    400064: IK.L
+    400066: IK.L_end
+    400068: IK.R
+    400070: IK.R_end
+    400072: Leg Controll.L
+    400074: Leg Controll.R
+    400076: Lower Arm.L
+    400078: Lower Arm.R
+    400080: Lower Leg.L
+    400082: Lower Leg.L_end
+    400084: Lower Leg.R
+    400086: Lower Leg.R_end
+    400088: Mater Bone
+    400090: //RootNode
+    400092: Upper Arm.L
+    400094: Upper Arm.R
+    400096: Upper Leg.L
+    400098: Upper Leg.R
+    2300000: Cube.001
+    3300000: Cube.001
+    4300000: Cube.001
+    4300002: Cube.002
+    7400000: Armature.001|Shooting
+    7400002: Armature.001|Walk
+    7400004: Armature.001|Walk Cycle
+    7400006: Armature.001|Walking
+    7400008: Cube.002|Shooting
+    7400010: Cube.002|Walk
+    7400012: Cube.002|Walk Cycle
+    7400014: Cube.001|Shooting
+    7400016: Cube.001|Walk
+    7400018: Cube.001|Walk Cycle
+    9500000: //RootNode
+    13700000: Cube.002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

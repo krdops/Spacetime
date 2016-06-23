@@ -1,0 +1,263 @@
+fileFormatVersion: 2
+guid: 9f64a5f4698e46f49a4fe2c7056dcffe
+timeCreated: 1466126707
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Arm Controll.L
+    100002: Arm Controll.L_end
+    100004: Arm Controll.R
+    100006: Arm Controll.R_end
+    100008: Armature.001
+    100010: Bone
+    100012: Bone.004
+    100014: Bone.004_end
+    100016: Bone.008
+    100018: Bone.008_end
+    100020: Bone.009
+    100022: Bone.009_end
+    100024: Bone.010
+    100026: Bone.010_end
+    100028: Bone.012
+    100030: Bone.012_end
+    100032: Bone.013
+    100034: Bone.013_end
+    100036: Circle
+    100038: Circle.001
+    100040: Cube.000
+    100042: Cube.001
+    100044: Cube.002
+    100046: Cube.003
+    100048: Cube.004
+    100050: Cube.005
+    100052: Cube.007
+    100054: Foot.L
+    100056: Foot.L_end
+    100058: Foot.R
+    100060: Foot.R_end
+    100062: IK Arm.L
+    100064: IK Arm.L_end
+    100066: IK Arm.R
+    100068: IK Arm.R_end
+    100070: IK Leg.L
+    100072: IK Leg.L_end
+    100074: IK Leg.R
+    100076: IK Leg.R_end
+    100078: IK.L
+    100080: IK.L_end
+    100082: IK.R
+    100084: IK.R_end
+    100086: Leg Controll.L
+    100088: Leg Controll.R
+    100090: Lower Arm.L
+    100092: Lower Arm.R
+    100094: Lower Leg.L
+    100096: Lower Leg.L_end
+    100098: Lower Leg.R
+    100100: Lower Leg.R_end
+    100102: Mater Bone
+    100104: //RootNode
+    100106: Plane
+    100108: Plane.001
+    100110: Plane.002
+    100112: Plane.003
+    100114: Plane.004
+    100116: Plane.005
+    100118: Plane.006
+    100120: Plane.007
+    100122: Plane.008
+    100124: Sun
+    100126: Upper Arm.L
+    100128: Upper Arm.R
+    100130: Upper Leg.L
+    100132: Upper Leg.R
+    400000: Arm Controll.L
+    400002: Arm Controll.L_end
+    400004: Arm Controll.R
+    400006: Arm Controll.R_end
+    400008: Armature.001
+    400010: Bone
+    400012: Bone.004
+    400014: Bone.004_end
+    400016: Bone.008
+    400018: Bone.008_end
+    400020: Bone.009
+    400022: Bone.009_end
+    400024: Bone.010
+    400026: Bone.010_end
+    400028: Bone.012
+    400030: Bone.012_end
+    400032: Bone.013
+    400034: Bone.013_end
+    400036: Circle
+    400038: Circle.001
+    400040: Cube.000
+    400042: Cube.001
+    400044: Cube.002
+    400046: Cube.003
+    400048: Cube.004
+    400050: Cube.005
+    400052: Cube.007
+    400054: Foot.L
+    400056: Foot.L_end
+    400058: Foot.R
+    400060: Foot.R_end
+    400062: IK Arm.L
+    400064: IK Arm.L_end
+    400066: IK Arm.R
+    400068: IK Arm.R_end
+    400070: IK Leg.L
+    400072: IK Leg.L_end
+    400074: IK Leg.R
+    400076: IK Leg.R_end
+    400078: IK.L
+    400080: IK.L_end
+    400082: IK.R
+    400084: IK.R_end
+    400086: Leg Controll.L
+    400088: Leg Controll.R
+    400090: Lower Arm.L
+    400092: Lower Arm.R
+    400094: Lower Leg.L
+    400096: Lower Leg.L_end
+    400098: Lower Leg.R
+    400100: Lower Leg.R_end
+    400102: Mater Bone
+    400104: //RootNode
+    400106: Plane
+    400108: Plane.001
+    400110: Plane.002
+    400112: Plane.003
+    400114: Plane.004
+    400116: Plane.005
+    400118: Plane.006
+    400120: Plane.007
+    400122: Plane.008
+    400124: Sun
+    400126: Upper Arm.L
+    400128: Upper Arm.R
+    400130: Upper Leg.L
+    400132: Upper Leg.R
+    2300000: Circle
+    2300002: Circle.001
+    2300004: Cube.000
+    2300006: Cube.001
+    2300008: Cube.003
+    2300010: Cube.004
+    2300012: Cube.005
+    2300014: Cube.007
+    2300016: Plane
+    2300018: Plane.001
+    2300020: Plane.002
+    2300022: Plane.003
+    2300024: Plane.004
+    2300026: Plane.005
+    2300028: Plane.006
+    2300030: Plane.007
+    2300032: Plane.008
+    3300000: Circle
+    3300002: Circle.001
+    3300004: Cube.000
+    3300006: Cube.001
+    3300008: Cube.003
+    3300010: Cube.004
+    3300012: Cube.005
+    3300014: Cube.007
+    3300016: Plane
+    3300018: Plane.001
+    3300020: Plane.002
+    3300022: Plane.003
+    3300024: Plane.004
+    3300026: Plane.005
+    3300028: Plane.006
+    3300030: Plane.007
+    3300032: Plane.008
+    4300000: Plane.008
+    4300002: Plane.007
+    4300004: Plane.006
+    4300006: Plane.004
+    4300008: Circle.001
+    4300010: Plane.002
+    4300012: Cube.005
+    4300014: Cube.004
+    4300016: Cube.003
+    4300018: Cube.001
+    4300020: Cube.000
+    4300022: Cube.007
+    4300024: Cube.002
+    4300026: Plane.001
+    4300028: Circle
+    4300030: Plane
+    4300032: Plane.003
+    4300034: Plane.005
+    7400000: Armature.001|Armature.001Action
+    7400002: Armature.001|Walk
+    7400004: Cube.002|Armature.001Action
+    7400006: Cube.002|Walk
+    9500000: //RootNode
+    13700000: Cube.002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
