@@ -1,6 +1,6 @@
 
 // Require a character controller to be attached to the same game object
-@script RequireComponent(CharacterController)
+@script RequireComponent(CharacterController);
 
 public var idleAnimation : AnimationClip;
 public var walkAnimation : AnimationClip;
@@ -16,12 +16,12 @@ public var landAnimationSpeed : float = 1.0;
 private var _animation : Animation;
 
 enum CharacterState {
-	Idle = 0,
+    Idle = 0,
 	Walking = 1,
 	Trotting = 2,
 	Running = 3,
 	Jumping = 4,
-}
+    };
 
 private var _characterState : CharacterState;
 
@@ -126,7 +126,7 @@ public var jumpPoseAnimation : AnimationClip;
 
 function UpdateSmoothedMovementDirection ()
 {
-	var cameraTransform = Camera.main.transform;
+	var cameraTransform = Camera.main.transform; // this needs an equivalent to C#'s GameObject.FindGameObjectWithTag("Camera").transform, Object Null Reference error directs here.
 	var grounded = IsGrounded();
 	
 	// Forward vector relative to the camera along the x-z plane	

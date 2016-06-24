@@ -2,7 +2,7 @@
 // Script: entity_health
 // Copyright (c) 2016, Golden Iota Gaming - All rights reserved.
 //    Unauthorized copying of this file via any medium is strictly prohibited.
-//    All contents within are closed-source, a.k.a. proprietary and confidential.
+//    All contents within are closed-source, i.e. proprietary and confidential.
 // Author(s): Erik Chase, Kody Dibble
 // Date Created: 22 June 2016
 // Description: Gives attached GameObject a "health" value. Securely handles all adjustments
