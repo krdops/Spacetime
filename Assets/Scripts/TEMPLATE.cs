@@ -48,6 +48,17 @@ public class TEMPLATE : MonoBehaviour {
     {
         
     }
+
+    // DESC: OnGUI ===========================================================================================
+    // Name  : OnGUI
+    // Params: n/a
+    // Descr : Unity function. For rendering/handling GUI events, and may be called several times per frame 
+    //         (but one call per event).
+    // =======================================================================================================
+    void OnGUI()
+    {
+
+    }
     #endregion
 
     #region GETS

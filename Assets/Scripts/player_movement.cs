@@ -6,7 +6,7 @@
 // Author(s): Erik Chase, Kody Dibble
 // Date Created: 1 July 2016
 // Description: Moves the player entity based on control input and any logical restrictions.
-// NOTE: Control input is referenced from "player_controls.cs"
+// NOTE: RUDIMENTARY STAGE -- STILL WIP. IF THERE'S A BETTER SCRIPT, FEEL FREE TO REPLACE
 // =====================================================================================
 
 using UnityEngine;
@@ -17,17 +17,13 @@ using System.Collections;
 public class player_movement : MonoBehaviour {
 
     #region VARS
-    private player_controls controls;
-    private Transform transf;
-    private Rigidbody rigidb;
-    public Vector3 velocity;
 
-    public float min_x = -.75f;
-    public float max_x = .75f;
-    public float speed_x = 7.5f;
-    public float min_y = 10f;
-    public float max_y = 10f;
-    public float speed_y = 10f;
+    public KeyCode forward = KeyCode.W;
+    public KeyCode backward = KeyCode.S;
+    public KeyCode left = KeyCode.A;
+    public KeyCode right = KeyCode.D;
+
+    public float moveSpeed = 10.0f;
 
     #endregion
 
@@ -39,14 +35,7 @@ public class player_movement : MonoBehaviour {
     // =======================================================================================================
     void Start()
     {
-        // 1. Initialize link to "player_controls" script.
-        controls = this.GetComponent<player_controls>();
 
-        // 2. Initialize link to "Transform" component.
-        transf = this.GetComponent<Transform>();
-
-        // 3. Initialize link to "Rigidbody" component.
-        rigidb = this.GetComponent<Rigidbody>();
     }
 
     // DESC: FixedUpdate =====================================================================================
@@ -56,24 +45,42 @@ public class player_movement : MonoBehaviour {
     // =======================================================================================================
     void FixedUpdate()
     {
-
-        // 1. Calculate velocity.
-        calc_velocity();
-
-        // 2. Apply velocity.
-        apply_velocity();
-
+        read_input();
     }
-    #endregion
-
-    #region GETS
-    #endregion
-
-    #region SETS
     #endregion
 
     #region MISC_FUNCS
 
+    public void read_input()
+    {
+        if (Input.GetKey(forward)) move_forward();
+        else if (Input.GetKey(backward)) move_backward();
+
+        if (Input.GetKey(right)) move_right();
+        else if (Input.GetKey(left)) move_left();
+    }
+
+    public void move_forward()
+    {
+        transform.Translate(transform.forward * moveSpeed * Time.deltaTime);
+    }
+
+    public void move_backward()
+    {
+        transform.Translate(transform.forward * -moveSpeed * Time.deltaTime);
+    }
+
+    public void move_right()
+    {
+        transform.Translate(transform.right * moveSpeed * Time.deltaTime);
+    }
+
+    public void move_left()
+    {
+        transform.Translate(transform.right * -moveSpeed * Time.deltaTime);
+    }
+
+    /*
     // DESC: apply_velocity ==================================================================================
     // Name  : apply_velocity
     // Params: n/a
@@ -91,7 +98,7 @@ public class player_movement : MonoBehaviour {
     // =======================================================================================================
     private void calc_velocity()
     {
-        calc_rotation();
+        //calc_rotation();
         calc_x();
         calc_y();
     }
@@ -113,6 +120,7 @@ public class player_movement : MonoBehaviour {
     // =======================================================================================================
     private void calc_x()
     {
+        
         // 1. Check if input is being received.
         if (controls.get_control_movement_x() != 0)
         {
@@ -123,19 +131,7 @@ public class player_movement : MonoBehaviour {
         {
             velocity = new Vector3(0, 0, 0);
         }
-    }
-
-    // TEST
-    private void calc_axis(float input, ref float coordinate, float min, float max)
-    {
-        if(input != 0)
-        {
-            coordinate = Mathf.Clamp(coordinate, min, max);
-        }
-        else
-        {
-            coordinate = 0;
-        }
+        
     }
 
     // DESC: calc_y ==========================================================================================
@@ -168,7 +164,7 @@ public class player_movement : MonoBehaviour {
     {
 
     }
-
+    */
     
     #endregion
 }

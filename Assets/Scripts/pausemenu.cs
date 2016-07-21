@@ -1,44 +1,54 @@
+// =====================================================================================
+// Script: pausemenu.cs
+// Copyright (c) 2016, Golden Iota Gaming - All rights reserved.
+//    Unauthorized copying of this file via any medium is strictly prohibited.
+//    All contents within are closed-source, i.e. proprietary and confidential.
+// Author(s): Kody Dibble
+// Date Created: July 2016
+// Description: Pause event handler.
+// =====================================================================================
+
 using UnityEngine;
 using System.Collections;
-using UnityStandardAssets Characters.ThirdPerson;
+//using UnityStandardAssets Characters.ThirdPerson;
 
 public class PauseGame : MonoBehaviour {
 
-	public Transform canvas;
+    #region VARS
+    public Transform canvas;
+    #endregion
 
-	
-	void Update() {
+    #region UNITY_FUNCS
+
+    void Update() {
 		
 		Pause();
 		
 	}
-	
-	public void Pause() {
-		
 
-		if(Input.GetKeyDown(keyCode.escape))
+    #endregion
+
+    #region MISC_FUNCS
+
+    public void Pause() {
+
+		if(Input.GetKeyDown(KeyCode.Escape))
 		{
-			
-			
-			if(canvas.gameObject.activeInHirearchy == false)
+			if(canvas.gameObject.activeInHierarchy == false)
 			{
 				canvas.gameObject.SetActive(true);
 				Time.timeScale = 0;
-				Player.GetComponent<ThirdPersonController>().enabled = false;
-			} else 
+				// Player.GetComponent<ThirdPersonController>().enabled = false; // DISABLE THIRD PERSON CONTROLLER
+			}
+            else 
 			{
 				canvas.gameObject.SetActive(false);
 				Time.timeScale = 1;
-				Player.GetComponent<ThirdPersonController>().enabled = true;
+				// Player.GetComponent<ThirdPersonController>().enabled = true;  // ENABLE THIRD PERSON CONTROLLER
 			}
-			
-			
 		}
-		
-		
-		
 	}
-	
 
-
+    #endregion
+    
 }
