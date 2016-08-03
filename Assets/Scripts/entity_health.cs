@@ -63,13 +63,13 @@ public class entity_health : MonoBehaviour {
         return currentHealth;
     }
 
-    // DESC: getDeathState ===================================================================================
-    // Name  : getDeathState
+    // DESC: hasDied =========================================================================================
+    // Name  : hasDied
     // Params: n/a
     // Return: bool
     // Descr : Returns the death state of entity.
     // =======================================================================================================
-    public bool getDeathState()
+    public bool hasDied()
     {
         return isDead;
     }

@@ -19,6 +19,18 @@ public class TEMPLATE : MonoBehaviour {
     #endregion
 
     #region UNITY_FUNCS
+    // DESC: Awake ===========================================================================================
+    // Name  : Awake
+    // Params: n/a
+    // Descr : Unity function. This function is called only ONCE (during lifetime of script instance).
+    //         Use for initializing any variables or game states before the game starts.
+    //         This function is called AFTER all objects are initialized.
+    // =======================================================================================================
+    void Awake()
+    {
+
+    }
+
     // DESC: Start ===========================================================================================
     // Name  : Start
     // Params: n/a
