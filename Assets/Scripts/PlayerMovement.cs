@@ -5,19 +5,14 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour
 {
     public float inputDel = 0.1f;
-    public float ForwVel = 12;
-    public float rotatVel = 100;
+    public float ForwVel = 12f;
+    public float rotatVel = 100f;
+    public float speed = 10f;
+
 
     Quaternion targetRotation;
     Rigidbody rBody;
-    float forwardInput, turnInput;
-
-    Quaternion TargetRotation
-    {
-
-        get { return targetRotation; }
-
-    }
+    float forwardInput;
 
     void Start()
     {
@@ -35,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     void GetInput()
     {
         forwardInput = Input.GetAxis("Vertical");
-        turnInput = Input.GetAxis("Horiziontal");
+       
 
     }
 
@@ -44,7 +39,15 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         GetInput();
-        Turn(); 
+
+
+        if (Input.GetKey(KeyCode.A))
+            transform.Rotate(Vector3.up * speed * Time.deltaTime);
+
+
+        if (Input.GetKey(KeyCode.D))
+            transform.Rotate(-Vector3.up * speed * Time.deltaTime);
+
 
 
 
@@ -54,7 +57,14 @@ public class PlayerMovement : MonoBehaviour
     {
 
 
-        Run(); 
+        Run();
+        if (Input.GetKey(KeyCode.A))
+            transform.Rotate(Vector3.up * speed * Time.deltaTime);
+
+
+        if (Input.GetKey(KeyCode.D))
+            transform.Rotate(-Vector3.up * speed * Time.deltaTime);
+
     }
 
 
@@ -77,13 +87,5 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    void Turn()
-    {
-        //Turning (HAS ERROR>?)
-        targetRotation *= Quaternion.AngleAxis(rotatVel * turnInput * Time.deltaTime, Vector3.up);
-        transform.rotation = targetRotation;
-
-
-    }
 
 }
